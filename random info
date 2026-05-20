@@ -1,0 +1,113 @@
+Beside the important stuff in README.md here ill dump RAW INFO if your smart read this ig?
+commands used 
+
+  r2 -A -a arm -b 16 -c "s 0x420c; pd 80" -q /path/
+  
+    INFO: Analyze all flags starting with sym. and entry0 (aa)
+INFO: Analyze imports (af@@@i)
+INFO: Analyze symbols (af@@@s)
+INFO: Running plugin pre-analysis hooks
+WARN: Variable 'anal.plugins.pre' not found
+INFO: Analyze all functions arguments/locals (afva@@F)
+INFO: Analyze function calls (aac)
+INFO: find and analyze function preludes (aap)
+INFO: Analyze len bytes of instructions for references (aar)
+INFO: Finding and parsing C++ vtables (avrr)
+INFO: Analyzing methods (af @@ method.*)
+INFO: Emulate functions to find computed references (aaef)
+INFO: Recovering local variables (afva@@@F)
+INFO: Type matching analysis for all functions (aaft)
+INFO: Propagate noreturn information (aanr)
+INFO: Use -AA or aaaa to perform additional experimental analysis
+INFO: Finding xrefs in noncode sections (e anal.in=io.maps.x; aav)
+WARN: Skipping aav because base address is zero. Use -B 0x800000 or aav0
+│       ╎   ; CODE XREF from fcn.00003d18 @ 0x3e10(x)
+│       ╎   0x0000420c      3046           mov r0, r6
+│       ╎   0x0000420e      0023           movs r3, 0
+│       ╎   0x00004210      0493           str r3, [var_10h]
+│       ╎   0x00004212      0593           str r3, [var_14h]
+│       ╎   0x00004214      0693           str r3, [var_18h]
+│       ╎   0x00004216      fff7d7fc       bl fcn.00003bc8
+│       ╎   0x0000421a      0498           ldr r0, [var_10h]
+│       ╎   0x0000421c      fff7a2fc       bl fcn.00003b64
+│       ╎   0x00004220      05a8           add r0, sp, 0x14
+│       ╎   0x00004222      fff7d1fc       bl fcn.00003bc8
+│       ╎   0x00004226      0598           ldr r0, [var_14h]
+│       ╎   0x00004228      fff79cfc       bl fcn.00003b64
+│       ╎   0x0000422c      0498           ldr r0, [var_10h]
+│       ╎   0x0000422e      10f00302       ands r2, r0, 3
+│      ┌──< 0x00004232      1cd1           bne 0x426e
+│      │╎   0x00004234      059b           ldr r3, [var_14h]
+│     ┌───< 0x00004236      ebb1           cbz r3, 0x4274
+│     ││╎   0x00004238      9900           lsls r1, r3, 2
+│     ││╎   0x0000423a      8b42           cmp r3, r1
+│    ┌────< 0x0000423c      1dd2           bhs 0x427a
+│    │││╎   0x0000423e      2df0b5fe       bl fcn.00031fac
+│    │││╎   0x00004242      8346           mov fp, r0
+│   ┌─────< 0x00004244      e0b9           cbnz r0, 0x4280
+│   ││││╎   0x00004246      fff779fc       bl fcn.00003b3c
+│   ││││╎   0x0000424a      5b46           mov r3, fp
+│   ││││╎   ; CODE XREF from fcn.00003d18 @ 0x426c(x)
+│  ┌──────> 0x0000424c      059a           ldr r2, [var_14h]
+│  ╎││││╎   0x0000424e      9342           cmp r3, r2
+│ ┌───────< 0x00004250      18d2           bhs 0x4284
+│ │╎││││╎   0x00004252      2046           mov r0, r4
+│ │╎││││╎   0x00004254      0093           str r3, [sp]
+│ │╎││││╎   0x00004256      fff7b7fc       bl fcn.00003bc8
+│ │╎││││╎   0x0000425a      0698           ldr r0, [var_18h]
+│ │╎││││╎   0x0000425c      fff782fc       bl fcn.00003b64
+│ │╎││││╎   0x00004260      009b           ldr r3, [sp]
+│ │╎││││╎   0x00004262      049a           ldr r2, [var_10h]
+│ │╎││││╎   0x00004264      0699           ldr r1, [var_18h]
+│ │╎││││╎   0x00004266      42f82310       str.w r1, [r2, r3, lsl 2]
+│ │╎││││╎   0x0000426a      0133           adds r3, 1
+│ │└──────< 0x0000426c      eee7           b 0x424c
+│ │ ││││╎   ; CODE XREFS from fcn.00003d18 @ 0x414c(x), 0x4232(x)
+│ │ │││└──> 0x0000426e      4ff0ff3b       mov.w fp, -1
+│ │ │││┌──< 0x00004272      07e0           b 0x4284
+│ │ ││││╎   ; CODE XREFS from fcn.00003d18 @ 0x4154(x), 0x4236(x)
+│ │ ││└───> 0x00004274      6ff0010b       mvn fp, 1
+│ │ ││┌───< 0x00004278      04e0           b 0x4284
+│ │ ││││╎   ; CODE XREFS from fcn.00003d18 @ 0x415c(x), 0x423c(x)
+│ │ │└────> 0x0000427a      6ff0020b       mvn fp, 2
+│ │ │┌────< 0x0000427e      01e0           b 0x4284
+│ │ ││││╎   ; CODE XREF from fcn.00003d18 @ 0x4244(x)
+│ │ └─────> 0x00004280      41f2010b       movw fp, 0x1001
+│ │  │││╎   ; XREFS: CODE 0x00004174  CODE 0x0000418e  CODE 0x00004250  CODE 0x00004272
+│ │  │││╎   ; XREFS: CODE 0x00004278  CODE 0x0000427e
+│ └──└└└──> 0x00004284      1ffa8bf0       uxth.w r0, fp
+│      ┌──< 0x00004288      9ae0           b 0x43c0
+│      │╎   ; CODE XREF from fcn.00003d18 @ 0x3e36(x)
+│      │╎   0x0000428a      05a8           add r0, sp, 0x14
+│      │╎   0x0000428c      4ff0000b       mov.w fp, 0
+│      │╎   0x00004290      cdf814b0       str.w fp, [var_14h]
+│      │╎   0x00004294      cdf818b0       str.w fp, [var_18h]
+│      │╎   0x00004298      fff796fc       bl fcn.00003bc8
+│      │╎   0x0000429c      0598           ldr r0, [var_14h]
+│      │╎   0x0000429e      fff761fc       bl fcn.00003b64
+│      │╎   0x000042a2      2046           mov r0, r4
+│      │╎   0x000042a4      fff790fc       bl fcn.00003bc8
+│      │╎   0x000042a8      0698           ldr r0, [var_18h]
+│      │╎   0x000042aa      fff75bfc       bl fcn.00003b64
+│      │╎   0x000042ae      5846           mov r0, fp
+│     ┌───< 0x000042b0      86e0           b 0x43c0
+│     ││╎   ; CODE XREF from fcn.00003d18 @ 0x3e18(x)
+│     ││╎   0x000042b2      4ff0000b       mov.w fp, 0
+│     ││╎   0x000042b6      05a8           add r0, sp, 0x14
+│     ││╎   0x000042b8      adf814b0       strh.w fp, [var_14h]
+│     ││╎   0x000042bc      cdf818b0       str.w fp, [var_18h]
+│     ││╎   0x000042c0      fff76afc       bl fcn.00003b98
+│     ││╎   0x000042c4      bdf81400       ldrh.w r0, [var_14h]
+│     ││╎   0x000042c8      fff738fc       bl fcn.00003b3c
+│     ││╎   0x000042cc      5846           mov r0, fp
+│     ││╎   0x000042ce      fff735fc       bl fcn.00003b3c
+│     ││╎   0x000042d2      5b46           mov r3, fp
+│     ││╎   0x000042d4      bdf81400       ldrh.w r0, [var_14h]
+│     ││╎   0x000042d8      2146           mov r1, r4
+│     ││╎   0x000042da      4ff6ff72       movw r2, 0xffff
+│     ││╎   0x000042de      29f02df8       bl fcn.0002d33c
+│     ││╎   0x000042e2      1ffa80fb       uxth.w fp, r0
+│     ││╎   0x000042e6      5846           mov r0, fp
+│     ││╎   0x000042e8      fff728fc       bl fcn.00003b3c
+│     ││╎   0x000042ec      bbf1000f       cmp.w fp, 0
+│     ││└─< 0x000042f0      7ff474ad       bne.w 0x3ddc
