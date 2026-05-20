@@ -1,5 +1,5 @@
 # MAPPED-OUT-REDMI-15C-
-preloader, bypasses, brom, and more
+just some random info i got while i was tryna root
 
 
   Request	Handler	Notes
@@ -35,4 +35,36 @@ preloader, bypasses, brom, and more
     0x3f74  lsr.w lr, r2, 1      ; lr = size / 2
     0x3f78  and r2, r2, #1       ; r2 = size & 1
     0x3f7e  cmp r3, lr           ; loop counter vs size/2
-  0x3f80  beq 0x3f8e           ; exit loop when done
+    0x3f80  beq 0x3f8e           ; exit loop when done
+
+ARM pseudocode
+// r2 = size from USB (passed in via var_10h)
+// r1 = pointer to input data (already set up before the loop)
+// r0 = 0 (initial checksum value)
+
+lsr lr, r2, #1    // lr = size / 2  (loop counter)
+and r2, r2, #1    // r2 = size & 1  (leftover byte after 16‑bit words)
+
+loop_start:
+    cmp r3, lr            // compare current index to (size/2)
+    beq loop_end          // if equal, all full 16‑bit words done
+    ldrh ip, [r1, r3, lsl #1]  // load 16‑bit word from input
+    adds r3, #1           // increment word index
+    eor r0, r0, ip        // XOR into checksum
+    b loop_start
+loop_end:
+    cbz r2, skip_byte     // if leftover byte is 0, skip
+    ldrb r3, [r1, r3, lsl #1] // load final byte
+    eor r0, r0, r3        // XOR into checksum
+skip_byte:
+    bl finalize_checksum   // send result to host
+
+No memory write here
+
+
+  Trait	Example Handler	Why It Matters
+  
+    Reads data from USB (bl fcn.00003bc8)	0xd4, 0xd5, 0xe1, 0xe7	Attacker controls input
+    Uses that data as a size or length	0xd7 (the loop counter)	Potential for integer overflow or unbounded copy
+    Writes to a fixed memory address (like str.w r4, [r1, #offset])	fcn.0002c228 (stores to 0x81000+)	If the address is reachable from USB, could be a register overwrite
+    Contains a bl memcpy or blx r3 with user‑controlled size	None found yet, but that’s the holy grail	Direct buffer overflow
