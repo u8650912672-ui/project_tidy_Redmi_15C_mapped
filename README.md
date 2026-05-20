@@ -27,3 +27,11 @@ preloader, bypasses, brom, and more
     0xfc	inline	Reads hardware registers
     0xfd	inline	Reads 0x8000000
     0xfe	inline	Sends status 3
+
+
+  most intresting
+  0x3f6e  ldr r2, [var_10h]    ; r2 = size from USB
+  0x3f74  lsr.w lr, r2, 1      ; lr = size / 2
+  0x3f78  and r2, r2, #1       ; r2 = size & 1
+  0x3f7e  cmp r3, lr           ; loop counter vs size/2
+  0x3f80  beq 0x3f8e           ; exit loop when done
