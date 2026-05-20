@@ -71,22 +71,4 @@ No memory write here
     Contains a bl memcpy or blx r3 with user‑controlled size	None found yet, but that’s the holy grail	Direct buffer overflow
 
 
-### 0xd4 handler (0x420c) — "Write USB data to buffer"
 
-Reads:
-  - [var_10h] = buffer base pointer (from USB)
-  - [var_14h] = element count (from USB)
-
-Flow:
-  1. Checks [var_10h] alignment (must be multiple of 4)
-  2. Calls allocator fcn.00031fac with size = element_count * 4
-  3. Enters write loop (i = 0; i < element_count; i++):
-       - Reads a 32-bit value from USB into [var_18h]
-       - str.w [var_18h], [buffer + i*4]   (0x4266)
-  4. Returns status in fp (r11)
-
-Potential issues:
-  - The multiplication element_count * 4 could wrap if element_count >= 0x40000001,
-    resulting in a tiny allocation but a huge write loop.
-  - The loop counter check at 0x424e is a simple unsigned compare — no off-by-one,
-    but the wrap-around case is not handled.
