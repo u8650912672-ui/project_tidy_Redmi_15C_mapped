@@ -1,4 +1,5 @@
 # MAPPED-OUT-REDMI-15C-
+## NOTE THAT THIS IS SUMMED UP BY AI HEAVELY
 just some random info i got while i was tryna root
 
 
