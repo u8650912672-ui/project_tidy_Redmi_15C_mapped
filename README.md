@@ -68,3 +68,12 @@ No memory write here
     Uses that data as a size or length	0xd7 (the loop counter)	Potential for integer overflow or unbounded copy
     Writes to a fixed memory address (like str.w r4, [r1, #offset])	fcn.0002c228 (stores to 0x81000+)	If the address is reachable from USB, could be a register overwrite
     Contains a bl memcpy or blx r3 with user‑controlled size	None found yet, but that’s the holy grail	Direct buffer overflow
+
+
+another critical thing i found while dumping parts is 
+   
+    0x4266   str.w r1, [r2, r3, lsl 2]
+    this is important as
+    r2 = base buffer pointer (from var_10h)
+    r3 = loop counter  
+    lsl 2 = multiply index by 4 (writing 32-bit values)
