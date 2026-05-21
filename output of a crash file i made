@@ -1,0 +1,289 @@
+# THE OUTPUT OF A FILE I MADE AND THEN I READ THAT 0xc6 IS INTRESTING SO I ISOLATED IT
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x0000 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0x1234 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd4 - complex processing wValue=0xffff wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x0000 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0x1234 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd1 - alloc and copy loop wValue=0xffff wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x0000 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0x1234 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xd5 - calls sub-functions wValue=0xffff wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x0000 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0x1234 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc4 - reads data, calls safe funcs wValue=0xffff wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x0000 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x0000 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x0000 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x1234 wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x1234 wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x1234 wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0xffff wIndex=0x0000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0xffff wIndex=0x1000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0xffff wIndex=0x2000 len=512 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x0000 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x0000 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x0000 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x1234 wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x1234 wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x1234 wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0xffff wIndex=0x0000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0xffff wIndex=0x1000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0xffff wIndex=0x2000 len=4096 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x0000 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x0000 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x0000 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x1234 wIndex=0x0000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x1234 wIndex=0x1000 len=256 - [Errno 32] Pipe error
+CRASH CANDIDATE: 0xc6 - reads data, bit ops wValue=0x1234 wIndex=0x2000 len=256 - [Errno 32] Pipe error
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc6 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xc7 - reads data, bit ops: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe1 - reads data, comparison: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
+0xe7 - reads data, processing: error [Errno 19] No such device (it may have been disconnected)
