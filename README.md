@@ -82,4 +82,4 @@ No memory write here
     Contains a bl memcpy or blx r3 with user‑controlled size	None found yet, but that’s the holy grail	Direct buffer overflow
 
 
-
+as for what i can map out now its not posseble to do root your phone without the paperclip bypass
