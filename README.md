@@ -2,6 +2,13 @@
 Reverse-engineered USB handler table and key code analysis for the MediaTek MT6768 preloader :) for the Xiaomi Redmi 15C ofc 
 i have used radare2, mtkclient, and 1 exploit being MQSAS root access. Root access is locked down tho due to the limit from SElinux as it dont allow us to exploit it IF i were to be able to disable i would have a full user to root escelation exploit but the fun is i have a full 0 click shell to root escelation
 
+
+# why use this?
+if you have a redmi 15 C you migth wanna use root on it? well in that case this is for you problem is i havent gotten full root unrestricted YET but i will try and post it here
+This is the first public, annotated list of every USB vendor‑specific command 
+accepted by the preloader. It includes which ones are patched, which ones are 
+safe, and which ones handle user‑supplied data
+
 # MAPPED-OUT-REDMI-15C-
 ## NOTE THAT THIS IS SUMMED UP BY AI HEAVELY
 just some random info i got while i was tryna root
