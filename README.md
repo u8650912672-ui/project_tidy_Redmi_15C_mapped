@@ -13,6 +13,12 @@ safe, and which ones handle user‑supplied data
 ## NOTE THAT THIS IS SUMMED UP BY AI HEAVELY
 just some random info i got while i was tryna root
 
+HERE IS A QUICK RUNDOWN IF YOUR SYSTEM IS A SNAPDRAGON YOU CAN DO A SNEAKY SELINUX BYPASS BY DOING
+adb reboot boatloader
+fastboot oem set-gpu-preemption
+This bypasses all restrictions of SElinux BUT it needs the cpu of snapdragon if you have a mediatek Uhm its a bit more complicated and i yet dont have a answer
+
+
 
   Request	Handler	Notes
 
