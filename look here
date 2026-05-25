@@ -1,0 +1,19 @@
+BINDER_WRITE_READ = 0xc0306201
+61:static size_t binder_alloc_buffer_size(struct binder_alloc *alloc,
+80:	new_buffer_size = binder_alloc_buffer_size(alloc, new_buffer);
+91:		buffer_size = binder_alloc_buffer_size(alloc, buffer);
+361:		buffer_size = binder_alloc_buffer_size(alloc, buffer);
+370:		buffer_size = binder_alloc_buffer_size(alloc, buffer);
+415:		total_alloc_size += binder_alloc_buffer_size(alloc, buffer);
+455:			     "%d: binder_alloc_buf failed, not allowed to alloc more async space\n",
+463:			     "%d: binder_alloc_buf size %zd failed, no async space left\n",
+472:		buffer_size = binder_alloc_buffer_size(alloc, buffer);
+487:				   "%d: binder_alloc_buf size %zd failed, no address space\n",
+497:		buffer_size = binder_alloc_buffer_size(alloc, buffer);
+508:		     "%d: binder_alloc_buf size %zd got buffer %p size %zd\n",
+531:			     "%d: binder_alloc_buf size %zd async free %zd\n",
+593:				   "%d: binder_alloc_buf, no vma\n",
+676:	buffer_size = binder_alloc_buffer_size(alloc, buffer);
+769:	size_t bytes = binder_alloc_buffer_size(alloc, buffer);
+1211:	size_t buffer_size = binder_alloc_buffer_size(alloc, buffer);
+use this how you want its very intresting taking a a look as you will spo something looking into these a bit deeper :3
