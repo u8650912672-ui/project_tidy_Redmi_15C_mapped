@@ -10,7 +10,7 @@ accepted by the preloader. It includes which ones are patched, which ones are
 safe, and which ones handle user‑supplied data
 
 # MAPPED-OUT-REDMI-15C-
-## NOTE THAT THIS IS SUMMED UP BY AI HEAVELY
+
 just some random info i got while i was tryna root
 
 # HERE IS A QUICK RUNDOWN IF YOUR SYSTEM IS A SNAPDRAGON YOU CAN DO A SNEAKY SELINUX BYPASS BY DOING
